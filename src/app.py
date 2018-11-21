@@ -12,7 +12,7 @@ from plotly.offline import plot
 import random
 
 
-number_of_words=int(30)
+number_of_words=int(50)
 top_words=[]
 with open('dict_filteredv2.csv', 'rb') as csvfile:
     reader = csv.reader(csvfile)
@@ -22,7 +22,7 @@ with open('dict_filteredv2.csv', 'rb') as csvfile:
     for row in reader:
         #print(row[0])
         single_word=row[0]
-        if index <=30:
+        if index <=number_of_words:
             top_words.append(single_word) 
             index = index+1; 
 
